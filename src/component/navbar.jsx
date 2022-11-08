@@ -9,7 +9,7 @@ import ButtonGetStarted from './buttonStarted.jsx';
 
 const Navbar = ()=>{
     return (
-        <nav className="navbar navbar-expand-lg bg-transparent fixed-top">
+        <nav className="navbar navbar-expand-lg bg-transparent fixed-top nav-top">
              <div className="container">
                 <a className="navbar-brand" href="#">
                     <img src="Assets/logo.svg" className="logo-navbar" alt="Logo Navbar"  />

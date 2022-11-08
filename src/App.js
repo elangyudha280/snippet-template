@@ -9,6 +9,9 @@ import Jumbotron from './component/jumbotron.jsx'
 // import main content
 import MainContent from './component/content.jsx'
 
+// import footer compnent
+import Footer from './component/footer.jsx'
+
 function App() {
   return (
     <>
@@ -18,6 +21,8 @@ function App() {
       <Jumbotron />
       {/* component main content */}
       <MainContent/>
+      {/* component footer */}
+      <Footer/>
     </>
   );
 }

@@ -9,7 +9,8 @@
 #root {
   position: relative;
   width: 100%;
-  height: 200vh;
+  height: auto;
+  padding-bottom: 100px;
   top: 0;
   left: 0;
 }
@@ -28,19 +29,19 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.navbar {
+.nav-top {
   padding: 1em 0.5em;
   font-family: "Poppins", sans-serif;
 }
 
-.navbar .logo-navbar {
+.nav-top .logo-navbar {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 
-.navbar .btn-signin {
+.nav-top .btn-signin {
   border-radius: 2em;
   padding: 0.6em 1.3em;
   border: none;
@@ -49,12 +50,12 @@
   background: transparent;
 }
 
-.navbar .btn-signin img {
+.nav-top .btn-signin img {
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
 }
 
-.navbar .btn-signin span {
+.nav-top .btn-signin span {
   font-size: 0.9em;
   font-weight: 600;
   margin-left: 0.7em;
@@ -150,6 +151,36 @@
      object-position: center;
 }
 
+.nav-footer {
+  margin-top: 50px;
+  padding: 0;
+  height: auto;
+}
+
+.nav-footer img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.nav-footer .inner-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-footer .inner-footer a {
+  color: #000;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 1000px) {
   .jumbotron {
     height: 600px;
@@ -194,6 +225,17 @@
   }
   .main-content .content-left .title-content {
     font-size: 1.5em;
+  }
+  .inner-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
