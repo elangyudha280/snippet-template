@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
@@ -50,6 +50,7 @@ $font: 'Poppins', sans-serif;
     }
     span {
       font-size: 0.9em;
+      font-weight: 600;
       margin-left: 0.7em;
     }
   }
@@ -103,9 +104,62 @@ $font: 'Poppins', sans-serif;
     left: 0;
   }
 }
+
+// CODE MAIN CONTENT
+.main-content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  grid-auto-rows: 400px;
+
+  .item-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  // Content left
+  .content-left {
+    padding: 4em 1em;
+
+    .title-content {
+      color: #000;
+      font-family: $font;
+      font-weight: 800;
+      font-size: 2.2em;
+    }
+
+    .desc-content {
+      padding-right: 1em;
+      font-weight: 600;
+    }
+  }
+  // CONTENT RIGHT
+  .img-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .jumbotron {
     height: 600px;
+  }
+  .main-content {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      'header'
+      'footer';
+
+    .content-left {
+      grid-area: footer;
+    }
+    .content-right {
+      grid-area: header;
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -129,6 +183,13 @@ $font: 'Poppins', sans-serif;
   .jumbotron {
     .title-jumbotron {
       font-size: 2em;
+    }
+  }
+  .main-content {
+    .content-left {
+      .title-content {
+        font-size: 1.5em;
+      }
     }
   }
 }

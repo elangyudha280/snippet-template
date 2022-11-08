@@ -6,6 +6,9 @@ import Navbar from './component/navbar.jsx'
 // jumbotron component 
 import Jumbotron from './component/jumbotron.jsx'
 
+// import main content
+import MainContent from './component/content.jsx'
+
 function App() {
   return (
     <>
@@ -13,6 +16,8 @@ function App() {
       <Navbar/>
       {/* component jumbotorn */}
       <Jumbotron />
+      {/* component main content */}
+      <MainContent/>
     </>
   );
 }
