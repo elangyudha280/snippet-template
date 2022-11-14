@@ -12,7 +12,7 @@ const Navbar = ()=>{
         <nav className="navbar navbar-expand-lg bg-transparent fixed-top nav-top">
              <div className="container">
                 <a className="navbar-brand" href="#">
-                    <img src="Assets/logo.svg" className="logo-navbar" alt="Logo Navbar"  />
+                    <img src="Assets/Logo.svg" className="logo-navbar" alt="Logo Navbar"  />
                 </a>
                 <button className="btn-signin ms-auto">
                     <img src="Assets/Search Icon.svg" alt="" />
